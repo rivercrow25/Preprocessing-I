@@ -57,3 +57,114 @@ html, body {
     height: 100%;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Zhi+Mang+Xing&display=swap');
+
+//mix-ins
+.flex(){
+	display: flex;
+}
+
+.adjust(){
+	display: flex;
+	justify-content: space-around;
+}
+
+//variables
+@heading:'Zhi Mang Xing', cursive;
+@normal: 'Indie Flower', cursive;
+@titlesize: 4rem; 
+@sectionsize: 2rem;
+//positioning
+html{
+	font-size: 62.5%;
+}
+
+
+header{
+	.head-container{
+		background-color: lightslategrey;
+		margin: 5% 10%;
+		height: 60vh;
+		width: 55%;
+		img{
+			width: 40%;
+			margin: 3% 5%;
+		}
+	}
+	nav{
+		.adjust();
+		a{
+			text-decoration: none;
+			color: black;
+			font-family: @normal
+		}//a
+	}//nav
+}//header
+
+section{
+	.middle{
+		.flex();
+		margin:0 10% 5%;
+		@media(max-width: 500px){
+			display: block;
+		}//media
+		.about{
+		}//.about
+	}//.middle
+	.experience{
+		margin-left: 10%;
+		.flex();
+		flex-direction: column;
+		margin-bottom: 3%;
+	}//experience
+	.skills{
+		ul{
+			border: 1px lightslategrey solid;
+			width: 10vw;
+			li{
+				border: 1px lightslategrey solid;
+				padding: 1% 0;
+			}
+		}
+	}
+}//section
+
+footer{
+	form{
+		.adjust();
+		margin-bottom: 2%;
+	}
+	.copyright{
+		text-align: center;
+	}
+}
+
+//typogrophy
+
+h1{
+	font-size: @titlesize;
+}
+h2{
+	font-size: @sectionsize;
+}
+
+h1,h2, h3, h4{
+	font-family:@heading;
+}
+
+p, li, label{
+	font-family: @normal;
+	font-size: 1.8rem;
+}
+
+@media(max-width: 500px){
+	h1{
+		font-size: 6rem;
+	}
+	h2{
+		font-size: 4rem;
+	}
+	p{
+		font-size:2.5rem;
+	}
+}

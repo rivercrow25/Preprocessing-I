@@ -1,1 +1,232 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+@font-face {
+  font-family: 'Indie Flower';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Indie Flower'), local('IndieFlower'), url(https://fonts.gstatic.com/s/indieflower/v11/m8JVjfNVeKWVnh3QMuKkFcZVaUuC.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Zhi Mang Xing';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Zhi Mang Xing Regular'), local('ZhiMangXing-Regular'), url(https://fonts.gstatic.com/s/zhimangxing/v5/f0Xw0ey79sErYFtWQ9a2rq-g4aAneQ.ttf) format('truetype');
+}
+html {
+  font-size: 62.5%;
+}
+header .head-container {
+  background-color: lightslategrey;
+  margin: 5% 10%;
+  height: 60vh;
+  width: 55%;
+}
+header .head-container img {
+  width: 40%;
+  margin: 3% 5%;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Indie Flower', cursive;
+}
+section .middle {
+  display: flex;
+  margin: 0 10% 5%;
+}
+@media (max-width: 500px) {
+  section .middle {
+    display: block;
+  }
+}
+section .experience {
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3%;
+}
+section .skills ul {
+  border: 1px lightslategrey solid;
+  width: 10vw;
+}
+section .skills ul li {
+  border: 1px lightslategrey solid;
+  padding: 1% 0;
+}
+footer form {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2%;
+}
+footer .copyright {
+  text-align: center;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Zhi Mang Xing', cursive;
+}
+p,
+li,
+label {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.8rem;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 6rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 2.5rem;
+  }
+}
